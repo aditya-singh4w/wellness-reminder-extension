@@ -2,7 +2,7 @@ const defaultSettings = {
   water: "Time to drink water!",
   focus: "Stay focused on your task!",
   posture: "Fix your posture!",
-  interval: 60
+  interval: 1
 };
 
 chrome.runtime.onInstalled.addListener(() => {
