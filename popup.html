@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wellness Reminder</title>
+
+  <style>
+    body{
+      font-family: Arial;
+      width:260px;
+      padding:10px;
+      background:white;
+      color:black;
+    }
+
+    input,button{
+      width:100%;
+      margin-top:5px;
+      padding:6px;
+    }
+
+    button{
+      background:#4CAF50;
+      color:white;
+      width:120px;     
+      height:40px;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    #save{
+      display:block;
+      margin:15px auto;
+    }
+
+    #timer{
+      font-size:26px;
+      text-align:center;
+      margin:10px 0;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<h3>Reminder Settings</h3>
+
+<label>Water Message</label>
+<input id="water">
+
+<label>Focus Message</label>
+<input id="focus">
+
+<label>Posture Message</label>
+<input id="posture">
+
+<label>Interval (minutes)</label>
+<input id="interval" type="number">
+
+<button id="save">Save </button>
+
+<hr>
+
+<h3>Pomodoro Timer</h3>
+
+<label>Focus Time (minutes)</label>
+<input id="focusTime" type="number" value="25">
+
+<label>Break Time (minutes)</label>
+<input id="breakTime" type="number" value="5">
+
+<p id="timer">25:00</p>
+
+<button id="start">Start</button>
+<button id="reset">Reset</button>
+
+<hr>
+
+<h3>Productivity</h3>
+<p id="sessions">Sessions completed: 0</p>
+
+<hr>
+
+<script src="popup.js"></script>
+
+</body>
+</html>
